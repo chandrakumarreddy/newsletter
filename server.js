@@ -17,7 +17,7 @@ app.get('/',(req,res,next)=>{
     res.render('main/home');
     });
 
-app.listen(3000,(err)=>{
+app.listen(process.env.PORT || 3000,(err)=>{
 if(err){
     console.log('connection error');
 }else{
